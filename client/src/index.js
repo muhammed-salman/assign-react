@@ -15,6 +15,7 @@ import Welcome from './components/Welcome';
 import Signup from './components/auth/Signup';
 import Signout from './components/auth/Signout';
 import Signin from './components/auth/Signin';
+import CardContainer from './components/CardContainer';
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -36,7 +37,7 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <AppContainer>
-        <Route path="/" exact component={Welcome} />
+        <Route path="/" exact component={CardContainer} />
         <Route path="/signup" component={Signup} />
         <Route path="/home" component={App} />
         <Route path="/signout" component={Signout} />

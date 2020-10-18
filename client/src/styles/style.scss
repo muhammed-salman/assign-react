@@ -1,3 +1,9 @@
+:root{
+  --primary-color : #7fc4fd;
+  --text-on-primary: #fff;
+  --secondary-color: #f1f9ff;
+  --text-on-secondary: #299afb;
+}
 .form-border{
   border: 1px solid #000;
   padding: 15px 6px;
@@ -88,5 +94,37 @@ pre {
       border: 0;
     }
 
+  }
+}
+
+.card{
+  padding: 0;
+}
+
+.card-img-top, .sidebar{
+  background-color: var(--primary-color);
+  color: var(--text-on-primary);
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.card-body {
+  background-color: var(--secondary-color);
+  color: var(--text-on-secondary);
+}
+
+.card-title{
+  font-weight: bold;
+  font-size: 16pt;
+  text-transform: capitalize;
+}
+
+.sidebar {
+  height: 100vh;
+  text-transform: none;
+  li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
   }
 }

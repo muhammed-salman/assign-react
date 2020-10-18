@@ -6,7 +6,7 @@ export default ({ children }) => {
   return (
     <div>
       <Navigation />
-      <div className="container mt-3 pb-5">
+      <div className="container-fluid mt-3 pb-2">
         {children}
       </div>
       <Footer />
